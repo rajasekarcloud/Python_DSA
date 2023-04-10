@@ -1,4 +1,9 @@
 # Printing one sided pyramids using recursion
+# ******
+# ****
+# ***
+# **
+# *
 def pyramid(n):
     if n == 0:
         return;
