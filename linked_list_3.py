@@ -39,6 +39,7 @@ class LinkedList:
             self.head = new_node;
             self.tail = new_node;
         else:
+         # Current HEAD node will be next node of the new node
             new_node.next = self.head;
             self.head = new_node;
 
