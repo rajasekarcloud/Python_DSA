@@ -42,6 +42,13 @@ class LinkedList:
          # Current HEAD node will be next node of the new node
             new_node.next = self.head;
             self.head = new_node;
+    def middle_insert(self,index,value):
+        new_node = Node(value);
+        temp_node = self.head;
+        for _ in range(index - 1):
+            temp_node = temp_node.next;
+        new_node.next = temp_node.next;
+        temp_node.next = new_node;
 
 ll = LinkedList();
 ll.add_end_node(10);
@@ -50,4 +57,6 @@ ll.add_end_node(30);
 print(ll);
 ll.add_begin_node(40);
 ll.add_begin_node(50);
+print(ll);
+ll.middle_insert(2,100);
 print(ll);
