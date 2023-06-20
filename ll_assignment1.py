@@ -5,3 +5,14 @@
 # LinkedList class constructor  takes a value as an argument and creates new node object based on Node class with that value.
 # head and tail attributes of the linked list to point to the new node.
 # A length attribute, initialized to 1, which represents the current number of nodes in the list.
+class Node:
+    def __init__(self,value):
+        self.value = value;
+        self.next = None;
+
+class LinkedList:
+    def __init__(self,value):
+        new_node = Node(10);
+        self.head = new_node;
+        self.tail = new_node;
+        self.length = 1;
