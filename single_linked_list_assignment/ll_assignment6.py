@@ -3,7 +3,7 @@
 # The function should take the index(starting from 0) of the node to be deleted as a parameter.
 
 def remove(self, index):
-    # check if the index is 0 - empty or index greater than the length of the list
+    # check if the index is negative - empty or index greater than the length of the list
     if index < 0 or index >= self.length:
         return None;
     # If the node to be removed is HEAD - index == 0
