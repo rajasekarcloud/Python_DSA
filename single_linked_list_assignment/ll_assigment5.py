@@ -16,12 +16,20 @@ class LinkedList:
 
     def append(self, value):
         new_node = Node(value);
-        if self.head is None:
+        if self.head is None and self.tail is None:
             self.head = new_node;
             self.tail = new_node;
         else:
+            self.tail.next = new_node;
             self.tail = new_node;
-            new_node.next = None;
+        self.length +=1;
+
+ll = LinkedList();
+ll.append(10);
+ll.append(20);
+ll.append(30);
+print(ll.tail.value);
+
 
 ll = LinkedList();
 ll.append(10);
